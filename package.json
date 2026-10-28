@@ -1,0 +1,17 @@
+{
+  "name": "fintrack",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal finance tracker with K-Means, Decision Tree and Random Forest insights",
+  "engines": { "node": ">=20.19" },
+  "scripts": {
+    "setup": "node scripts/setup-env.mjs",
+    "dev": "node scripts/dev.mjs",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test && npm --prefix client test",
+    "audit": "npm --prefix server audit && npm --prefix client audit",
+    "prelaunch": "node scripts/prelaunch-check.mjs"
+  }
+}
